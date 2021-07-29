@@ -115,6 +115,10 @@ $(closePopUpBtn).on('click', () => {
       $(popUpElem).fadeOut(500);
     }
     if ($(window).width() >= 768) {
-        
+        // blur main element & make it unscrollable on tablet + desktop view
+        $('.projects').css('filter', 'blur(0px)');
+        $('body').css('overflow', 'scroll');
+      } else {
+
 
 };
