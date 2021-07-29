@@ -93,5 +93,13 @@ $(popUpElem)
 .children('.popUpImg')
 .css('backgroundImage', `url(${projectImg})`);
 
+// show project's GitHub url on popup
+$(popUpElem)
+.children('#popUpText')
+.children('div')
+.children('#githubLink')
+.attr('href', `${projetGithubRepo}`);
+
+
 
 };
