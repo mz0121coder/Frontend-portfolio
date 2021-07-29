@@ -82,4 +82,10 @@ $(popUpElem)
 .children('p')
 .text(`${projectDesc}`);
 
+// setting the heading of pop-up to match selected project
+$(popUpElem)
+.children('#popUpText')
+.children('h1')
+.text(`${projectHeading}`);
+
 };
