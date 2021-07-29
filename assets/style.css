@@ -1,0 +1,51 @@
+/* General styling */
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.projects,.contact,footer {
+    text-align: center
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-tap-highlight-color: transparent
+}
+
+*,*::before,*::after {
+    box-sizing: inherit
+}
+
+html,body,ul,ol,figure {
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background: #eee;
+}
+
+::selection {
+    background: #eee;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1.5em
+}
+
+.popUpdesc {
+    display: none;
+}
