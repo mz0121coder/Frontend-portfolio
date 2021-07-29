@@ -20,4 +20,7 @@ const windowLoaded = () => {
     $(popUpElem).hide(1);
     mainElem.on('click', e => {
       if ($(e.target).closest('.project-item').length > 0) {
+     // check if pop-up is already up
+        if (popUpState === false) {
+            
 };
