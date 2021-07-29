@@ -391,3 +391,21 @@ footer ul li a:hover:after {
     background-size: cover;
     display: block;
 }
+
+/* Tablet styling for pop-up */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .popUp{
+        width: 95vw;
+        left: 2.5vw;
+        display: block;
+        top: 5vh;
+    }
+
+    .popUp .popUpImg{
+        background-size: cover;
+        background-position: center;
+        display: none; 
+        width: 95vw;
+        height: 50vh;
+    }
+}
