@@ -158,3 +158,112 @@ b {
 .intro .down:hover {
     bottom: 2rem;
 }
+
+/* Projects section styling */
+
+.projects {
+    margin-top: 80vh;
+    background-color: white;
+}
+
+.projects .projects-collage {
+    max-width: 96rem;    
+    margin: 0 auto;
+}
+
+.projects .projects-collage::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.projects .projects-collage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+a.project-item {
+    position: relative;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 769px) {
+    a.project-item {
+        width:50%;
+        float: left;
+    }
+}
+
+a.project-item:hover .project-overlay {
+    opacity: .7;
+}
+
+a.project-item:hover .project-text {
+    top: 50%;
+    opacity: 1;
+}
+
+a.project-item:hover .project-text h2:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+    a.project-item .project-overlay {
+        opacity:.7;
+    }
+
+    a.project-item .project-text {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+.project-text {
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    line-height: 1;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    font-weight: 300;
+    color: white;
+}
+
+.project-text h2 {
+    position: relative;
+    font-size: 2rem;
+    padding-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+}
+
+.project-text p {
+    margin: 0;
+    padding-top: 1.5rem;
+}
+
+img {
+    height: 375px;
+    width: 100%;
+}
