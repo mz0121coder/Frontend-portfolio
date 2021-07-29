@@ -69,8 +69,12 @@ const windowLoaded = () => {
     .children('#githubRepo')
     .attr('href');
 
-    
-
+    // preview live link of selected project
+    const projectLivePreview = $(e.target)
+    .closest('.project-figure')
+    .children('figcaption')
+    .children('#livePreview')
+    .attr('href');
 
 
 };
