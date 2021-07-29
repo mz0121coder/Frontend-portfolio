@@ -76,5 +76,10 @@ const windowLoaded = () => {
     .children('#livePreview')
     .attr('href');
 
+// setting the paragraph of pop-up to match selected project
+$(popUpElem)
+.children('#popUpText')
+.children('p')
+.text(`${projectDesc}`);
 
 };
