@@ -109,6 +109,12 @@ $(popUpElem)
 }
 }
 });
-
+// set popup state to true
+$(closePopUpBtn).on('click', () => {
+    if (popUpState === true) {
+      $(popUpElem).fadeOut(500);
+    }
+    if ($(window).width() >= 768) {
+        
 
 };
