@@ -49,3 +49,46 @@ p {
 .popUpdesc {
     display: none;
 }
+
+/* Main body styling */
+body {
+    font: 100% "Work Sans", Helvetica, sans-serif;
+    color: black;
+    background-color: antiquewhite;
+    line-height: 1.5;
+    position: relative;
+}
+
+a {
+    color: black;
+    font-weight: 300;
+    position: relative;
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+}
+
+a:hover,a:focus {
+    color: #757575;
+    outline: none;
+}
+
+p {
+    font-weight: 300;
+}
+
+b {
+    font-weight: 400;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 600;
+}
