@@ -100,6 +100,15 @@ $(popUpElem)
 .children('#githubLink')
 .attr('href', `${projetGithubRepo}`);
 
+// show project's deployed link on popup
+$(popUpElem)
+.children('#popUpText')
+.children('div')
+.children('#previewLink')
+.attr('href', `${projectLivePreview}`);
+}
+}
+});
 
 
 };
