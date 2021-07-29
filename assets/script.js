@@ -28,5 +28,11 @@ const windowLoaded = () => {
     // blur out main element & make it unscrollable on tablet and desktop view
         $('.projects').css('filter', 'blur(7px)');
         } else {
-            
+        // on mobile view, remove all elements except pop-up by setting display to none
+        $('.projects').css('display', 'none');
+        $('footer').css('display', 'none');
+        $('.intro').css('display', 'none');
+        $('.contact').css('display', 'none');
+    }
+
 };
