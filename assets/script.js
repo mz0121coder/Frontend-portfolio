@@ -62,6 +62,15 @@ const windowLoaded = () => {
     .children('img')
     .attr('src');
 
+    // preview repo of selected project
+    const projetGithubRepo = $(e.target)
+    .closest('.project-figure')
+    .children('figcaption')
+    .children('#githubRepo')
+    .attr('href');
+
+    
+
 
 
 };
