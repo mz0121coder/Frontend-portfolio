@@ -39,4 +39,8 @@ const windowLoaded = () => {
         $('body').css('overflow', 'hidden');
       }
 
+        // display the pop-up
+        $(popUpElem).show(400);
+
+        
 };
