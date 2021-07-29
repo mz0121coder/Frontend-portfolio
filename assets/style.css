@@ -329,3 +329,65 @@ footer ul li a:hover:after {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+/* Desktop view styling for pop-up */
+.popUp{
+    color: black;
+    height: 70vh; 
+    width: 80vw;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    background-color: #ffffff;
+    box-shadow: 0 0 17px 2px rgba(128, 128, 128, 0.089);
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+.popUp div:nth-child(2){
+    padding: 10vh 2em;
+    position: relative;
+} 
+
+.popUp span{
+    display: block;
+    position: absolute;
+    top: 4%;
+    padding: 5px 20px;
+    border-radius: 200px;
+    font-size: 2em;
+    background-color: black;
+    color: honeydew;
+    text-align: center;
+    right: 5%; 
+    cursor: pointer;
+    user-select: none;
+}
+
+.popUp div:nth-child(2) h1{
+    font-size: 2.3em;
+    margin-bottom: 1em;
+}
+
+.popUp div:nth-child(2) p{
+    font-size: 0.9em;
+}
+
+.popUp div:nth-child(2) div{
+    display: grid;
+    grid-template-columns: repeat(2, 10%);
+}
+
+.popUp div:nth-child(2) div a:nth-child(1){
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: block;
+}
+
+.popUp div:nth-child(2) div a:nth-child(2){
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: block;
+}
