@@ -92,3 +92,69 @@ b {
     background-color: #fff;
     z-index: 600;
 }
+
+/* Intro section styling */
+.Hello {
+    max-width: 74rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+    .Hello {
+        padding:0 1rem;
+    }
+}
+
+.content {
+    background-color: white;
+    padding-top: 8rem;
+    text-align: center;
+}
+
+.intro {
+    position: fixed;
+    top: 0;
+    height: 80vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.intro .intro-text {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.intro span {
+    color: rgb(3, 42, 233);
+}
+
+.intro h1 {
+    width: 50%;
+    font-size: 2rem;
+    font-size: calc(2rem + 1vw);
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        text-align: center;
+    }
+
+    .intro h1 {
+        width: 100%;
+    }
+}
+
+.intro .down {
+    bottom: 2.5rem;
+}
+
+.intro .down:hover {
+    bottom: 2rem;
+}
