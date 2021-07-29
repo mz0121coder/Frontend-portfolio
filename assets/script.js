@@ -119,6 +119,11 @@ $(closePopUpBtn).on('click', () => {
         $('.projects').css('filter', 'blur(0px)');
         $('body').css('overflow', 'scroll');
       } else {
-
+// on mobile view, remove all elements except pop-up
+$('.projects').css('display', 'block');
+$('footer').css('display', 'block');
+$('.intro').css('display', 'block');
+$('.contact').css('display', 'block');
+}
 
 };
