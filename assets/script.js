@@ -22,5 +22,7 @@ const windowLoaded = () => {
       if ($(e.target).closest('.project-item').length > 0) {
      // check if pop-up is already up
         if (popUpState === false) {
-            
+    // set pop-up state to true
+          popUpState = true;
+          if ($(window).width() >= 768) {
 };
