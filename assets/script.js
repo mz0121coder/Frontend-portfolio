@@ -88,4 +88,10 @@ $(popUpElem)
 .children('h1')
 .text(`${projectHeading}`);
 
+// setting image of popup to match selected project
+$(popUpElem)
+.children('.popUpImg')
+.css('backgroundImage', `url(${projectImg})`);
+
+
 };
