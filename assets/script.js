@@ -55,7 +55,13 @@ const windowLoaded = () => {
     .children('figcaption')
     .children('.popUpdesc')
     .text();
-    
+
+    // preview image of selected project
+    const projectImg = $(e.target)
+    .closest('.project-figure')
+    .children('img')
+    .attr('src');
+
 
 
 };
