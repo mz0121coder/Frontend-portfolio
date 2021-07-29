@@ -42,5 +42,12 @@ const windowLoaded = () => {
         // display the pop-up
         $(popUpElem).show(400);
 
-        
+    // preview heading of selected project
+    const projectHeading = $(e.target)
+    .closest('.project-figure')
+    .children('figcaption')
+    .children('h2')
+    .text();
+
+    
 };
