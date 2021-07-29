@@ -34,5 +34,9 @@ const windowLoaded = () => {
         $('.intro').css('display', 'none');
         $('.contact').css('display', 'none');
     }
+    // disable scroll for smaller screen devices
+    if ($(window).width() > 768) {
+        $('body').css('overflow', 'hidden');
+      }
 
 };
