@@ -25,4 +25,8 @@ const windowLoaded = () => {
     // set pop-up state to true
           popUpState = true;
           if ($(window).width() >= 768) {
+    // blur out main element & make it unscrollable on tablet and desktop view
+        $('.projects').css('filter', 'blur(7px)');
+        } else {
+            
 };
