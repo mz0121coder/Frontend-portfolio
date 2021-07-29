@@ -125,5 +125,7 @@ $('footer').css('display', 'block');
 $('.intro').css('display', 'block');
 $('.contact').css('display', 'block');
 }
-
+// set popup state back to false to work accordingly
+popUpState = false;
+});
 };
