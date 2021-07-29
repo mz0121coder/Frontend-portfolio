@@ -409,3 +409,23 @@ footer ul li a:hover:after {
         height: 50vh;
     }
 }
+
+/* Mobile view styling for pop-up */
+@media (min-width: 320px) and (max-width: 480px) {
+    .popUp{
+           width: 95vw;
+           left: 2.5vw;
+           display: block;
+            top: 1vh;
+            height: 140vh;
+            position: static;
+       }
+   
+       .popUp .popUpImg{
+           background-size: cover;
+           background-position: center;
+           display: none; 
+           width: 95vw;
+           height: 50vh;
+       }
+   }
