@@ -49,5 +49,13 @@ const windowLoaded = () => {
     .children('h2')
     .text();
 
+    // preview description of selected project
+    const projectDesc = $(e.target)
+    .closest('.project-figure')
+    .children('figcaption')
+    .children('.popUpdesc')
+    .text();
     
+
+
 };
